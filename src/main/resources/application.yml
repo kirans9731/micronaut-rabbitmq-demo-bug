@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: demo
+rabbitmq:
+  automatic-recovery-enabled: true
+  requested-heartbeat: 1
+  servers:
+    one:
+      uri: amqp://guest:guest@localhost:5672
+    two:
+      uri: amqp://guest:guest@localhost:5672
+endpoints:
+  health:
+    enabled: true
